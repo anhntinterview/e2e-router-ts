@@ -16,6 +16,7 @@ function App() {
   const [auth, setAuth] = useState<Auth>();
 
   useEffect(() => {
+    localStorage.setItem("vct-14", JSON.stringify(fakeAuth))
     const _auth = localStorage.getItem("vct-14");
 
     if (_auth) {
